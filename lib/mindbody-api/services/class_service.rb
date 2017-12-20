@@ -3,6 +3,7 @@ module MindBody
     class ClassService < Service
       service "ClassService"
 
+      operation :get_enrollments # monkey patch needed endpoint
       operation :add_clients_to_classes
       operation :get_classes
       operation :get_class_visits,           required:[:class_id]
